@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import Header from "./Header";
 
 export interface PageProps {
@@ -6,9 +7,10 @@ export interface PageProps {
 
 export default function Page(props: PageProps) {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
-      <h1>{props.children}</h1>
+      <main className="container mx-auto p-7 flex-1">{props.children}</main>
+      <Footer />
     </div>
   );
 }
