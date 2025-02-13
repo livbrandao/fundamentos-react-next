@@ -1,3 +1,5 @@
+import Page from "@/components/template/Page";
+
 export default function Home() {
-  return <div>Página Inicial</div>;
+  return <Page> Página Inicial</Page>;
 }
