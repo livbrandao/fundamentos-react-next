@@ -19,3 +19,34 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.button {
+  @apply flex gap-1 items-center self-start text-white font-bold py-2 px-6 rounded-lg;
+}
+
+.primary {
+  @apply bg-green-500 hover:bg-green-300;
+}
+
+.secondary {
+  @apply bg-red-500 hover:bg-red-300;
+}
+
+.tertiary {
+  @apply bg-yellow-500 hover:bg-yellow-300;
+}
+
+.card {
+  @apply flex flex-col justify-center items-center;
+}
+
+.card-case {
+  @apply shadow-md bg-zinc-900 rounded-lg overflow-hidden;
+  h1 {
+    @apply text-3xl font-black text-white px-10 py-5 bg-zinc-800;
+  }
+
+  .content {
+    @apply flex flex-col gap-1 p-5 text-xl;
+  }
+}
