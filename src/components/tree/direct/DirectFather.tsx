@@ -1,4 +1,4 @@
-import Children from "./children";
+import DirectChildren from "./DirectChildren";
 
 export interface FatherProps {
   name: string;
@@ -6,7 +6,7 @@ export interface FatherProps {
   childrens: string[];
 }
 
-export default function Father(props: FatherProps) {
+export default function DirectFather(props: FatherProps) {
   return (
     <div className="flex flex-col gap-2">
       <div className="py-6">
@@ -21,7 +21,7 @@ export default function Father(props: FatherProps) {
           Filhos
         </span>
         {props.childrens.map((child, index) => (
-          <Children key={index} name={child} lastName={props.lastName} />
+          <DirectChildren key={index} name={child} lastName={props.lastName} />
         ))}
       </div>
     </div>

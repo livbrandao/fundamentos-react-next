@@ -3,7 +3,7 @@ export interface ChildrenProps {
   lastName: string;
 }
 
-export default function Children(props: ChildrenProps) {
+export default function DirectChildren(props: ChildrenProps) {
   return (
     <div>
       <p className="text-sm font-semibold">

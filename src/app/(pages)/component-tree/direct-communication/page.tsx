@@ -1,5 +1,5 @@
 import Title from "@/components/template/Title";
-import Father from "@/components/tree/direct/Father";
+import DirectFather from "@/components/tree/direct/DirectFather";
 import { IconDirections } from "@tabler/icons-react";
 
 export default function DirectCommunication() {
@@ -11,7 +11,7 @@ export default function DirectCommunication() {
         subtitle="Exemplo de comunicação direta entre Componentes"
       />
 
-      <Father
+      <DirectFather
         name="José"
         lastName="Silva"
         childrens={["Maria", "Paulo", "Pedro"]}
