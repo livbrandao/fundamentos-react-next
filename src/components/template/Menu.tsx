@@ -5,6 +5,7 @@ import {
   IconCode,
   IconComponents,
   IconBorderStyle,
+  IconArrowDown,
 } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
@@ -44,6 +45,11 @@ export default function Menu(props: MenuProps) {
       />
 
       <MenuLabel title="Árvore Componentes" />
+      <MenuItem
+        icon={IconArrowDown}
+        text="Comunicação Direte"
+        link="/component-tree/direct-communication"
+      />
     </nav>
   );
 }
