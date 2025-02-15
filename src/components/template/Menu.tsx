@@ -9,6 +9,7 @@ import {
   IconClick,
   IconStatusChange,
   IconArrowUp,
+  IconUsersPlus,
 } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
@@ -58,6 +59,11 @@ export default function Menu(props: MenuProps) {
         icon={IconArrowUp}
         text="Comunicação Indireta"
         link="/component-tree/indirect-communication"
+      />
+      <MenuItem
+        icon={IconUsersPlus}
+        text="Cadastro de Usuário"
+        link="/component-tree/crud"
       />
 
       <MenuLabel title="Gerenciamento de Estado" />
