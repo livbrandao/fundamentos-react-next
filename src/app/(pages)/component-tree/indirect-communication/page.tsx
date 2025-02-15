@@ -11,11 +11,7 @@ export default function IndirectCommunication() {
         subtitle="Exemplo de comunicação indireta entre Componentes"
       />
 
-      <IndirectFather
-        name="José"
-        lastName="Silva"
-        childrens={["Maria", "Paulo", "Pedro"]}
-      />
+      <IndirectFather />
     </div>
   );
 }
