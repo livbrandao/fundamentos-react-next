@@ -1,7 +1,6 @@
 import Title from "@/components/template/Title";
 import {
   IconBrandReact,
-  IconBrandNextjs,
   IconComponents,
   IconCode,
   IconStatusChange,
@@ -32,7 +31,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-8 my-8">
       <Title
         title="Bem-vindo ao React & Next"
         subtitle="Aprenda desenvolvimento web moderno através de exemplos práticos"
