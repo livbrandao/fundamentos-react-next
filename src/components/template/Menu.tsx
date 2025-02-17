@@ -10,6 +10,7 @@ import {
   IconStatusChange,
   IconArrowUp,
   IconUsersPlus,
+  IconListDetails,
 } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
@@ -20,8 +21,8 @@ export interface MenuProps {
 export default function Menu(props: MenuProps) {
   return (
     <nav className="flex flex-col">
-      <MenuLabel title="Componentes" />
       <MenuItem icon={IconHome} text="Home" link="/" />
+      <MenuLabel title="Componentes" />
       <MenuItem
         icon={IconCode}
         text="Expressões no JSX"
@@ -38,12 +39,12 @@ export default function Menu(props: MenuProps) {
         link="/ui-examples/jsx-basics/jsx-conditional-rendering"
       />
       <MenuItem
-        icon={IconBorderStyle}
+        icon={IconComponents}
         text="Fundamentos Tailwind"
         link="/ui-examples/tailwind-basics"
       />
       <MenuItem
-        icon={IconComponents}
+        icon={IconListDetails}
         text="Mapeamento no JSX"
         link="/ui-examples/list-mapping-example"
       />

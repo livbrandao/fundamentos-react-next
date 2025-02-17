@@ -1,13 +1,13 @@
 "use client";
 
+import Title from "@/components/template/Title";
 import {
   IconBulb,
   IconCheckbox,
   IconClipboard,
   IconClipboardCheck,
+  IconComponents,
   IconListDetails,
-  IconLocation,
-  IconLocationCode,
 } from "@tabler/icons-react";
 import { useState } from "react";
 
@@ -54,10 +54,13 @@ export default function TailwindExample() {
       `;
 
   return (
-    <div className="container mx-auto p-7">
-      <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-        <IconListDetails /> Estrutura básica
-      </h2>
+    <div className="container mx-auto p-7 flex flex-col gap-10">
+      <Title
+        title="Estrutura básica com Tailwind CSS"
+        subtitle="Explicando os conceitos de um layout básico utilizando
+         Tailwind CSS"
+        icon={IconComponents}
+      />
 
       <div className="flex flex-row gap-2 justify-between">
         <div className="flex flex-col flex-1 bg-black px-10 py-14 gap-9 rounded-md w-full h-full">
@@ -88,14 +91,14 @@ export default function TailwindExample() {
         </div>
       </div>
 
-      <div className="mt-10">
+      <div>
         <p className="text-zinc-500 mb-4 break-words">
           Este exemplo demonstra a construção de um layout básico utilizando{" "}
           <strong>Tailwind CSS</strong>. Ele permite criar layouts com classes
           prontas, sem precisar escrever CSS manualmente.
         </p>
 
-        <ul className="list-disc list-inside text-zinc-500 mb-4">
+        <ul className="list-disc list-inside text-zinc-500">
           <li>
             <strong>Título e Subtítulo</strong> → Definem a identidade visual do
             conteúdo com tamanhos e estilos específicos.
