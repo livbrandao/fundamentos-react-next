@@ -1,24 +1,18 @@
-import { ReactNode } from "react";
 import MenuLabel from "./MenuLabel";
 import {
   IconHome,
   IconCode,
   IconComponents,
-  IconBorderStyle,
-  IconArrowDown,
   IconClick,
   IconStatusChange,
-  IconArrowUp,
   IconUsersPlus,
   IconListDetails,
+  IconArrowsDiff,
+  IconArrowsDoubleNeSw,
 } from "@tabler/icons-react";
 import MenuItem from "./MenuItem";
 
-export interface MenuProps {
-  children?: ReactNode;
-}
-
-export default function Menu(props: MenuProps) {
+export default function Menu() {
   return (
     <nav className="flex flex-col">
       <MenuItem icon={IconHome} text="Home" link="/" />
@@ -52,12 +46,12 @@ export default function Menu(props: MenuProps) {
 
       <MenuLabel title="Árvore Componentes" />
       <MenuItem
-        icon={IconArrowDown}
+        icon={IconArrowsDiff}
         text="Comunicação Direta"
         link="/component-tree/direct-communication"
       />
       <MenuItem
-        icon={IconArrowUp}
+        icon={IconArrowsDoubleNeSw}
         text="Comunicação Indireta"
         link="/component-tree/indirect-communication"
       />

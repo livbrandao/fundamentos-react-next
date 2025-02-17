@@ -4,7 +4,7 @@ import allUsers from "../../../data/constants/users";
 import User from "@/data/model/User";
 import UserList from "./UserList";
 import Forms from "./Forms";
-import { IconNews, IconUsersPlus } from "@tabler/icons-react";
+import { IconUsersPlus } from "@tabler/icons-react";
 import Id from "@/data/model/Id";
 
 export default function UserRegister() {

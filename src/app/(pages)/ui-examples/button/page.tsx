@@ -1,8 +1,20 @@
 "use client";
 import Title from "@/components/template/Title";
-import { IconClick } from "@tabler/icons-react";
+import {
+  IconClick,
+  IconClipboard,
+  IconClipboardCheck,
+} from "@tabler/icons-react";
+import { useState } from "react";
 
 export default function ButtonExample() {
+  const [copied, setCopied] = useState(false);
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   function handleClick(text: string) {
     alert(`Botão clicado. ${text}!`);
   }
@@ -47,6 +59,16 @@ export default function ButtonExample() {
         </div>
 
         <div className="relative text-white rounded-md overflow-hidden ">
+          <button
+            onClick={handleCopy}
+            className="absolute top-2 right-2 bg-zinc-700 hover:bg-zinc-600 text-white p-2 rounded-md transition-all"
+          >
+            {copied ? (
+              <IconClipboardCheck size={18} />
+            ) : (
+              <IconClipboard size={18} />
+            )}
+          </button>
           <pre className="bg-zinc-900 text-zinc-300 px-4 py-3 rounded-md ">
             <code>{code}</code>
           </pre>

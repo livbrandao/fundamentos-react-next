@@ -7,7 +7,6 @@ import {
   IconClipboard,
   IconClipboardCheck,
   IconComponents,
-  IconListDetails,
 } from "@tabler/icons-react";
 import { useState } from "react";
 
