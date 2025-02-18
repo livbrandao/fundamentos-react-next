@@ -1,6 +1,4 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -9,6 +7,10 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+
+  basePath: "/fundamentos-react-next",
+  trailingSlash: true,
+  output: "export",
 };
 
-export default nextConfig;
+module.exports = nextConfig;
