@@ -1,6 +1,6 @@
 ![React & Next.js](public/React-Nextjs.png)
 
-# 🚀 Fundamentos React & Next.js
+# Fundamentos React & Next.js
 
 Um projeto educacional para aprender desenvolvimento web moderno através de exemplos práticos.
 
