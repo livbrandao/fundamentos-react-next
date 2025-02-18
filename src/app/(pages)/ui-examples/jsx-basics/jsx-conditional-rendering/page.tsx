@@ -89,8 +89,8 @@ export default function JSXConditionalRendering() {
 
         <ul className="list-disc list-inside text-zinc-500">
           <li>
-            <strong>Operador ternário</strong> → Decide entre "Par" ou "Ímpar"
-            baseado no valor de <code>numberPair</code>.
+            <strong>Operador ternário</strong> → Decide entre &quot;Par&quot; ou
+            &quot;Ímpar&quot; baseado no valor de <code>numberPair</code>.
           </li>
           <li>
             <strong>Operador lógico AND (&&)</strong> → Renderiza um texto

@@ -2,9 +2,7 @@
 import { useState } from "react";
 import IndirectChildren from "./IndirectChildren";
 
-export interface IndirectFatherProps {}
-
-export default function IndirectFather(props: IndirectFatherProps) {
+export default function IndirectFather() {
   const [result, setResult] = useState("???");
 
   function getResult(result: string) {

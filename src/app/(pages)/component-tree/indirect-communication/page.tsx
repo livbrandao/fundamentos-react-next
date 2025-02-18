@@ -11,7 +11,7 @@ import { useState } from "react";
 export default function IndirectCommunicationExplained() {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = (code: any) => {
+  const handleCopy = (code: string) => {
     navigator.clipboard.writeText(code);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);

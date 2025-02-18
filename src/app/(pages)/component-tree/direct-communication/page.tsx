@@ -10,7 +10,7 @@ import { useState } from "react";
 
 export default function DirectCommunication() {
   const [copied, setCopied] = useState(false);
-  const handleCopy = (code: any) => {
+  const handleCopy = (code: string) => {
     navigator.clipboard.writeText(code);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -89,7 +89,7 @@ export default function DirectCommunication() {
 
           <div className="relative text-white rounded-md overflow-hidden ">
             <button
-              onClick={handleCopy}
+              onClick={() => handleCopy(directFatherCode)}
               className="absolute top-2 right-2 bg-zinc-700 hover:bg-zinc-600 text-white p-2 rounded-md transition-all"
             >
               {copied ? (
@@ -161,7 +161,7 @@ export default function DirectCommunication() {
       <div className="flex flex-row gap-3 justify-between">
         <div className="w-[50%] relative text-white rounded-md overflow-hidden ">
           <button
-            onClick={handleCopy}
+            onClick={() => handleCopy(directCommunicationCode)}
             className="absolute top-2 right-2 bg-zinc-700 hover:bg-zinc-600 text-white p-2 rounded-md transition-all"
           >
             {copied ? (
